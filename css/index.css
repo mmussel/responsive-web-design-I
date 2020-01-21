@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 *{
     border: 1px solid black;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-right: 20%;
 }
 body{
@@ -76,7 +76,7 @@ body{
 }
 .titles{
     word-spacing: 60px;
-    margin-left: 10%;
+    margin-left: 20%;
     width: 50%;
     
 }
@@ -97,7 +97,7 @@ header{
 h1{
 	font-size: 80px;
     width: 20%;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-top: 6%;
 
 
@@ -110,7 +110,7 @@ h1{
 	width: 10%;
     margin-bottom: 100px;
     padding: 10px;
-    margin-left: 21%;
+    margin-left: 31%;
 	
 
 
@@ -131,7 +131,7 @@ h1{
 
 }
 .feature{
-    margin-left: 7%;
+    margin-left: 17%;
     width: 80%;
     
 }
@@ -148,11 +148,11 @@ h1{
     font-size: 20px;
 }
 .middle{
-	width: 70%;
-    margin-left: 150px;
+	width: 60%;
+    margin-left: 250px;
 }
 .services{
-    margin-left: 7%;
+    margin-left: 17%;
 }
 .vision{
     margin-right: 15%;
@@ -163,42 +163,44 @@ h1{
     
 }
 .contact{
-    margin-left: 200px;
+    margin-left: 300px;
     font-size: 20px;
 }
 address{
 	font-size: 15px;
 	width: 15%;
-	margin: 10px 0px 0px 200px;
+	margin: 10px 0px 0px 300px;
 
 }
 .number{
 	font-size: 15px;
 	width: 15%;
-	margin: 10px 0px 0px 200px;
+	margin: 10px 0px 0px 300px;
 }
 .email{
 	font-size: 15px;
 	width: 15%;
-	margin: 10px 0px 0px 200px;
+	margin: 10px 0px 0px 300px;
 }
 .copyright{
 	text-align: center;
 }
+
+
+
 @media (max-width: 500px){
     *{
-       margin-right: 10%;
-       margin-left: 10%;
+       
+        width: 90%;
     }
+    
     header{
         display: flex;
         flex-direction: column-reverse;
     }
     .logo{
-        
-        margin-left: 10px;
         width: 35%;
-        margin-right: 40%;
+        
         
     }
     .titles{
@@ -209,53 +211,55 @@ address{
         line-height: 50px;
         text-decoration: none;
         margin-top: 5%;
+       
     }
     .titles a{
         text-decoration: none;
         color: grey;
         border-bottom: 1px solid grey;
         border-top: 1px solid grey;
-        
+        margin-left: 20%;
     }
     
-    .main1 h1{
-       
+    h1{
         text-align: center;
         width: 60%;
-        padding: 0%;
-        margin-right: 90%;
-        margin-left: 0%;
+        padding-left: 0%;
+        padding-right: 10%;
         
     }
     .start{
-       margin-left: 10%;
+        text-align: center;
+       margin-left: 70%;
         width: 20%;
         border: 1px solid black;
         font-size: 100%;
         padding-left: 10%;
-        padding-right: 20%;
+        padding-right: 25%;
     }
     .info1{
         flex-wrap:wrap;
         width: 100%;
     }
-    .info2{
-        flex-wrap: wrap;
-        width: 100%;
+   
     }
     .feature{
         margin-bottom: 50px;
         font-size: 80%;
-        width: 90%;
-    }
-    .services, .vision, .product{
-        font-size: 80%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 0%;
     }
+    
+  .info2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+     
+  }
+  .vision, .services, .product{
+      margin-top: 10%;
+      width: 500px;
+      font-size: 80%;
+  }
     .contact, address, .email, .number{
         margin: 20px;
         padding: 0px;
@@ -269,21 +273,25 @@ address{
         
     }
     .middle{
-        margin: 0px;
-        margin-left: 50%;
+        margin-left: 220px;
         margin-right: 0%;
+       
     }
     .about{
-        font-size: 80%;
-        margin-right: 30%;
-        margin-left: 0%;
+        font-size: 78%;
+        margin-right: 0%;
+        margin-left: 10%;
     }
     .feature{
-        margin-left: 50%;
-        margin-right: 0%;
+     margin-left: 10%;
     }
- }
- @media (max-width: 1200px){
+    .services{
+        width: 100%;
+    }
+
+ 
+ 
+    @media (max-width: 1200px){
      *{
          margin-left: 10%;
          margin-right: 10%;
@@ -308,11 +316,13 @@ address{
     text-decoration: none;
     color: grey;
    }
-
+.info2{
+    flex-direction: row;
+}
  .vision, .services, .product{
-   width: 40%;
-   margin-left: 5%;
-   margin-right: 5%;
+     width: 200px;
+   margin: 5%;
+   margin: 5%;
  
    }
    .feature, .about{
@@ -336,5 +346,11 @@ address{
     .middle{
         width: 80%;
         margin-left: 9%;
+ 
+    }
+    .contact, .number, .email, address{
+        margin-left: 100px;
     }
  }
+
+
